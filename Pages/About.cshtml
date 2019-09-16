@@ -7,3 +7,13 @@
 <h3>@Model.Message</h3>
 
 <p>Use this area to provide additional information.</p>
+
+<p>
+    <a asp-page-handler="detail" asp-route-Message="Nazdar Bazar">Klikni</a>
+</p>
+
+<form method="post">
+    <label asp-for="Message"></label>
+    <input asp-for="Message" />
+    <input type="submit" value="Odeslat" />
+</form>
